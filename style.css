@@ -1,0 +1,115 @@
+/* style.css */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #99B898;
+}
+
+nav {
+    text-align: right;
+    padding-bottom: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:not(:last-child)::after {
+    content: "|";
+    margin: 0 0.5rem;
+    color: #333;
+    font-weight: normal;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    margin-bottom: 0.5rem;
+    text-align: left;
+    max-width: 500px;
+}
+
+h2 {
+    color: #555;
+    font-weight: normal;
+    margin-top: 0;
+    text-align: left;
+    max-width: 500px;
+}
+
+p {
+    margin-bottom: 2rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 500px;
+}
+
+.social {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.linkedin-logo,
+.kvadrad-logo {
+    transition: all 0.3s ease;
+    filter: grayscale(100%);
+}
+
+.linkedin-logo {
+    width: 48px;
+    height: auto;
+}
+
+.kvadrat-logo {
+    width: 30px;
+    height: auto;
+}
+
+.linkedin-logo:hover,
+.kvadrat-logo:hover {
+    opacity: 0.7;
+    filter: grayscale(0%);
+}
+
+.links {
+    text-align: right;
+    padding: 1rem 0;
+}
+
+.links a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    .linkedin-logo {
+        width: 36px;
+    }
+    
+    .kvadrat-logo {
+        width: 28px;
+    }
+}
